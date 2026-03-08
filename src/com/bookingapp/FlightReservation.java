@@ -4,12 +4,14 @@ public final class FlightReservation extends Reservation {
     private Flight flight;
     private String passengerName;
 
+    // Inisialisasi data untuk reservasi penerbangan
     public FlightReservation(int confirmationNumber, Flight flight, String passengerName) {
         super(confirmationNumber);
         this.flight = flight;
         this.passengerName = passengerName;
     }
 
+    // Menampilkan detail reservasi penerbangan
     @Override
     public void display() {
         System.out.println("Flight Reservation #" + confirmationNumber +

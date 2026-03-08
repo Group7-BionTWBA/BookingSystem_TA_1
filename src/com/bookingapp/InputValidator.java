@@ -5,6 +5,7 @@ import java.util.InputMismatchException;
 
 public class InputValidator {
 
+    // Meminta input angka dari pengguna dan menangani jika input tidak valid
     public static int getIntInput(Scanner scanner, String message) {
         int input = 0;
         boolean valid = false;
@@ -24,6 +25,7 @@ public class InputValidator {
         return input;
     }
 
+    // Meminta input teks dari pengguna dan memastikan input tidak kosong
     public static String getStringInput(Scanner scanner, String message) {
         String input;
 
